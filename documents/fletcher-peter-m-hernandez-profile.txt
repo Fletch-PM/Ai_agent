@@ -1,0 +1,36 @@
+Fletcher Peter M. Hernandez
+Packaged App Developer | Software Engineer | System & AI Architect
+
+Executive Summary
+    -Results-driven Software Engineer and Packaged App Developer at Accenture with a strong foundation in BS Information Technology from Quezon City University. Certified Boomi Integration Professional specializing in enterprise application integration, data synchronization, and system architecture. Combines a user-centric approach in UI/UX Design with hands-on experience in AI Architecture, including Agentic AI, AI Workflows, and Retrieval-Augmented Generation (RAG). Proven track record of developing impactful solutions, from enterprise system integrations to specialized accessibility technology.
+
+Core Competencies & Skills
+    -Integration & Architecture: Enterprise Application Integration (EAI), Boomi, System Architecture, API Integration, ETL
+    -Artificial Intelligence: Agentic AI, AI Workflows, Retrieval-Augmented Generation (RAG), AI Architecture & Engineering
+    -Testing & Quality Assurance: Tricentis Tosca (AS1 Certified), Automated Testing, Integration Testing
+    -UI/UX & Mobile Development: UI/UX Design, Wireframing & Prototyping, Mobile App Development (iOS/Android)
+    -Methodologies & Tools: Agile / Scrum, Software Development Life Cycle (SDLC), Git/GitHub
+
+Professional Experience
+Accenture
+Packaged App Developer / Software Engineer | July 13, 2026 – Present
+    -Designed and implemented enterprise integration solutions using Boomi to connect legacy and cloud systems, streamlining data workflows.
+    -Applied system architecture best practices to ensure scalable, high-performing application integration.
+    -Employed Tricentis Tosca (AS1) for test automation, improving build quality and reducing regression testing cycles.
+    -Integrated UI/UX design principles into application interfaces to optimize user workflows and accessibility.
+    -Explored and implemented emerging AI engineering paradigms—including Agentic AI, autonomous AI workflows, and RAG frameworks—to enhance system capabilities.
+    Certifications:
+    -Boomi Integration Professional Certification — Boomi
+    -Tricentis Tosca AS1 (Automation Specialist 1) Certification — Tricentis
+
+Featured Projects
+RITMO — Mobile Application for Children with Autism (Capstone Project)
+Role: Lead Architect / UI/UX Designer & Developer
+-Designed and developed RITMO, a specialized mobile application created to help children with autism manage their daily routines through visual and auditory cues.
+-Conducted UI/UX user research focused on neurodiverse accessibility standards to craft a calm, intuitive visual interface.
+-Structured the underlying application architecture to support reliable schedule tracking, task completion metrics, and real-time parent/caregiver updates.
+
+Education
+-Bachelor of Science in Information Technology (BSIT)
+    -Quezon City University | Graduated: June 30, 2026
+    -Capstone Project: RITMO – Autism Daily Routine Management App

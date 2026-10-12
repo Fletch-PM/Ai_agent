@@ -1,0 +1,19 @@
+# LangGraph agentic AI project dependencies
+langgraph
+langchain
+langchain-community
+
+# Claude (Anthropic) integration
+langchain-anthropic
+
+# Qdrant vector database integrations
+qdrant-client
+langchain-qdrant
+fastembed
+
+# Load environment variables from .env
+python-dotenv
+requests
+elevenlabs
+streamlit
+python-docx
