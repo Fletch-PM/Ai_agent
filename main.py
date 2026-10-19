@@ -9,6 +9,13 @@ from app.tools.voice.voice import speech_to_text, text_to_speech
 st.set_page_config(page_title="JARVIS", page_icon="J")
 
 st.session_state.setdefault("messages", [])
+st.session_state.setdefault("stt_enabled", True)
+st.session_state.setdefault("tts_enabled", True)
+
+with st.sidebar:
+    st.subheader("Voice controls")
+    st.checkbox("Enable speech-to-text", key="stt_enabled")
+    st.checkbox("Enable text-to-speech", key="tts_enabled")
 
 
 def play_tts(audio):
@@ -36,24 +43,30 @@ def respond_to(user_input):
             answer = result["messages"][0].content
         st.markdown(answer)
 
-        audio = text_to_speech(answer)
-        if audio:
-            play_tts(audio)
+        if st.session_state.tts_enabled:
+            audio = text_to_speech(answer)
+            if audio:
+                play_tts(audio)
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
 
 
 prompt = st.chat_input(
     "Write a message or use the microphone...",
-    accept_audio=True,
+    accept_audio=st.session_state.stt_enabled,
 )
 
 if prompt:
-    user_input = prompt.text.strip() if prompt.text else ""
+    if isinstance(prompt, str):
+        user_input = prompt.strip()
+        audio_input = None
+    else:
+        user_input = prompt.text.strip() if prompt.text else ""
+        audio_input = prompt.audio
 
-    if prompt.audio:
+    if st.session_state.stt_enabled and audio_input:
         with st.spinner("Transcribing..."):
-            spoken_text = speech_to_text(prompt.audio)
+            spoken_text = speech_to_text(audio_input)
         user_input = spoken_text.strip() if spoken_text else user_input
 
     if user_input:

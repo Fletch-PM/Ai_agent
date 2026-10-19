@@ -16,9 +16,9 @@ def _get_voice_profile():
         stability = float(os.getenv("ELEVENLABS_STABILITY", "0.60"))
         similarity = float(os.getenv("ELEVENLABS_SIMILARITY", "0.60"))
         style = float(os.getenv("ELEVENLABS_STYLE", "0.20"))
-        speed = float(os.getenv("ELEVENLABS_SPEED", "2.00"))
+        speed = float(os.getenv("ELEVENLABS_SPEED", "1.00"))
     except ValueError:
-        stability, similarity, style, speed = 0.60, 0.60, 0.20, 1.10
+        stability, similarity, style, speed = 0.60, 0.60, 0.20, 1.00
 
     return {
         "stability": max(0.0, min(1.0, stability)),
